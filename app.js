@@ -6,6 +6,10 @@ app.use((req, res, next) => {
   next(); // Passe à la route suivante
 });
 
+app.post("/data", (req, res) => {
+  const data = req.body;
+  res.send(`Données reçues : ${JSON.stringify(data)}`);
+});
 app.use(express.static("public"));
 app.get("/", (req, res) => {
   res.send("Bonjour, Express.js!de jojo");
