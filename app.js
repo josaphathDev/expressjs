@@ -4,6 +4,7 @@ require("dotenv").config();
 
 const express = require("express");
 
+
 // Import des middlewares
 const logger = require("./middleware/logger");
 const auth = require("./middleware/auth");
